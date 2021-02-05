@@ -1,5 +1,3 @@
-import 'dart:html';
-
 ///By Mochamad Nizwar Syafuan
 ///nizwar@merahputih.id
 ///==================================================================================

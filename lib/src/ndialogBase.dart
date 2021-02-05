@@ -2,6 +2,7 @@
 ///nizwar@merahputih.id
 ///==================================================================================
 import 'dart:async';
+
 import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:ndialog/src/zoom_widget/zoom_widget.dart';
@@ -24,7 +25,12 @@ class NDialog extends StatelessWidget {
   final List<Widget> actions;
 
   const NDialog(
-      {Key key, this.dialogStyle, this.title, this.content, this.actions})
+      {Key key,
+      this.dialogStyle,
+      this.title,
+      this.content,
+      this.actions,
+      this.shadowColor})
       : super(key: key);
 
   @override

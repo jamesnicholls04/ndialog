@@ -30,7 +30,7 @@ class NDialog extends StatelessWidget {
       this.title,
       this.content,
       this.actions,
-      this.shadowColor})
+      this.shadowColor = Colors.black})
       : super(key: key);
 
   @override

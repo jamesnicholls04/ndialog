@@ -18,6 +18,8 @@ class NDialog extends StatelessWidget {
   ///The (optional) content of the dialog is displayed in the center of the dialog in a lighter font.
   final Widget content;
 
+  final Color shadowColor;
+
   ///The (optional) set of actions that are displayed at the bottom of the dialog.
   final List<Widget> actions;
 
@@ -133,6 +135,7 @@ class NDialog extends StatelessWidget {
                   builder: (context, val, child) => Transform.scale(
                       scale: val,
                       child: Card(
+                        shadowColor: shadowColor,
                         child: dialogChild,
                         clipBehavior: Clip.antiAlias,
                         elevation: style.elevation ?? 24,
@@ -146,6 +149,7 @@ class NDialog extends StatelessWidget {
                       )),
                 )
               : Card(
+                  shadowColor: shadowColor,
                   child: dialogChild,
                   clipBehavior: Clip.antiAlias,
                   elevation: style.elevation ?? 24,

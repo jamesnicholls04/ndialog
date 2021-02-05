@@ -1,3 +1,5 @@
+import 'dart:html';
+
 ///By Mochamad Nizwar Syafuan
 ///nizwar@merahputih.id
 ///==================================================================================
@@ -10,7 +12,7 @@ extension DialogShow on Dialog {
     BuildContext context, {
     bool barrierDismissible = true,
     Color barrierColor,
-    bool useSafeArea = true,
+    bool useSafeArea = false,
     bool useRootNavigator = true,
     RouteSettings routeSettings,
   }) =>
@@ -31,7 +33,7 @@ extension AlertDialogShow on AlertDialog {
     BuildContext context, {
     bool barrierDismissible = true,
     Color barrierColor,
-    bool useSafeArea = true,
+    bool useSafeArea = false,
     bool useRootNavigator = true,
     RouteSettings routeSettings,
   }) =>
@@ -52,7 +54,7 @@ extension SimpleDialogShow on SimpleDialog {
     BuildContext context, {
     bool barrierDismissible = true,
     Color barrierColor,
-    bool useSafeArea = true,
+    bool useSafeArea = false,
     bool useRootNavigator = true,
     RouteSettings routeSettings,
   }) =>

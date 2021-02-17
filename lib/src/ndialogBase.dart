@@ -291,6 +291,7 @@ class DialogBackground extends StatelessWidget {
 
   ///Show dialog directly
   Future show<T>(BuildContext context) => showDialog<T>(
+      useSafeArea: false,
       context: context,
       builder: (context) => this,
       barrierColor: Color(0x00ffffff),
@@ -310,7 +311,7 @@ class DialogBackground extends StatelessWidget {
           return;
         },
         child: Stack(
-          clipBehavior: Clip.antiAlias,
+          //clipBehavior: Clip.antiAlias,
           alignment: Alignment.center,
           children: <Widget>[
             GestureDetector(
